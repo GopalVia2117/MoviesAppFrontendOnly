@@ -1,0 +1,65 @@
+section{
+    clear: both;
+    padding: 0;
+    margin: 30px;
+}
+
+.row{
+    zoom: 1;
+}
+
+.row::before, .row::after{
+    content:"";
+    display: table;
+}
+
+
+.row::after{
+    clear: both;
+}
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 0.5%;
+}
+
+/*-----GRID OF FOUR----------*/
+.span-4-of-4 {
+	width: 100%; 
+}
+
+.span-3-of-4 {
+	width: 74.6%; 
+}
+
+.span-2-of-4 {
+	width: 49.2%; 
+}
+
+.span-1-of-4 {
+	width: 23.8%; 
+}
+
+
+/*-----GRID OF FIVE----------*/
+.span-5-of-5 {
+	width: 100%;
+}
+
+.span-4-of-5 {
+  	width: 79.68%; 
+}
+
+.span-3-of-5 {
+  	width: 59.36%; 
+}
+
+.span-2-of-5 {
+  	width: 39.04%;
+}
+
+.span-1-of-5 {
+  	width: 18.72%;
+}
+

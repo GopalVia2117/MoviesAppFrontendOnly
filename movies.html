@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" href="vendor/css/ionicons.css">
+    <link rel="stylesheet" href="vendor/css/ionicons.min.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar cgradient">
+            <a class="logo" href="index.html"><img src="resources/img/365ep.jpg" alt="logo"></a>
+            <ul>
+                <li><a href="movies.html">Movies</a></li>
+                <!-- <li><a href="#">TV Series</a></li>
+                <li><a href="#">Audio</a></li> -->
+            </ul>
+        </nav>
+
+        <div class="corousel">
+            <span onclick="plusSlide(-1)" class="lt">&#8249;</span>
+            <span onclick="plusSlide(1)" class="gt">&#8250;</span>
+            <div class="mySlide">
+                <img src="resources/img/abc1 (1).jpg" alt="lagaan">
+            </div>
+            <div class="mySlide">
+                <img src="resources/img/abc2 (1).jpg" alt="special 26">
+            </div>
+            <div class="mySlide">
+                <img src="resources/img/abc3 (1).jpg" alt="1920 london">
+            </div>
+            <div class="mySlide">
+                <img src="resources/img/abc4 (1).jpg" alt="Ye jawani hai deewani">
+            </div>
+        
+            <div class="mySlide">
+                <img src="resources/img/abc5 (1).jpg" alt="#">
+            </div>
+        </div>
+    </header>
+
+    <section class="section-search row">
+        <div>
+            <div style="cursor: pointer" class="dropdown">
+                <button style="cursor: pointer" id="drop-btn">Genre</button>
+                <div class="dropdown-content">
+                    <a nohref id="genre-all" onclick="setGenre(this.id)">All</a>
+                    <a nohref id="genre-action" onclick="setGenre(this.id)">Action</a>
+                    <a nohref id="genre-drama" onclick="setGenre(this.id)">Drama</a>
+                    <a nohref id="genre-sci-fi" onclick="setGenre(this.id)">Sci-fi</a>
+                </div>
+           </div>
+            <input onkeyup="searchMovies()" type="text" name="search-field" id="search-field" placeholder="Search your favourite movie title">
+            <button id="search"><i class="ion-search icon-big"></i></button>
+        </div>
+      
+    </section>
+
+
+    <section class="section-movies">
+        <div class="row movies">
+            <div class="desc action">
+                <p><span class="movie_name movie_action">Haider</span> <br>Indian crime tragedy<br> film.</p>
+                <img src="resources/img/nano1.jpg" alt="Haider">
+            </div>
+            <div class="desc action">
+                <p><span class="movie_name movie_action">Dream 2</span> <br> Thriller, Mystery & <br> Comedy.</p>
+                <img src="resources/img/nano2.jpg" alt="Dream 2">
+            </div>
+            <div class="desc action">
+                <p><span class="movie_name movie_action">Batman</span><br>A Marvel Comics superhero <br> team.</p>
+                <img src="resources/img/nano3.jpg" alt="Batman">
+            </div>
+            <div class="desc action">
+                <p><span class="movie_name movie_action">Monster Manav</span> <br>Japanese manga series <br> written by Tsugumi.</p>
+                <img src="resources/img/nano4.jpg" alt="Monster Manav">
+            </div>
+            <div class="desc action">
+                <p><span class="movie_name movie_action">Kill Bill</span><br> 2003 American martial arts <br>film.</p>
+                <img src="resources/img/nano5.jpg" alt="Kill Bill">
+            </div>
+            <div class="desc action">
+                <p><span class="movie_name movie_action">Rowdy</span><br>Indian action <br>drama film.</p>
+                <img src="resources/img/nano6.jpg" alt="Rowdy">
+            </div>
+            <div class="desc drama">
+                <p><span class="movie_name movie_drama">Agnipaath</span><br> Indian crime tragedy <br>film.</p>
+                <img src="resources/img/nano7.jpg" alt="Agnipaath">
+            </div>
+            <div class="desc drama">
+                <p><span class="movie_name movie_drama">Ankhein</span><br>Thriller, Mystery & <br> Comedy.</p>
+                <img src="resources/img/nano8.jpg" alt="Ankhein">
+            </div>
+            <div class="desc drama">
+                <p><span class="movie_name movie_drama">Guide</span><br> A Marvel Comics superhero <br>team.</p>
+                <img src="resources/img/nano9.jpg" alt="Guide">
+            </div>
+            <div class="desc drama">
+                <p><span class="movie_name movie_drama">Deewar</span><br>2016 Fantasy/Science<br> Fiction.</p>
+                <img src="resources/img/nano10.jpg" alt="Deewar">
+            </div>
+            <div class="desc drama">
+                <p><span class="movie_name movie_drama">Sholay</span><br> A Marvel Comics superhero <br>team.</p>
+                <img src="resources/img/nano11.jpg" alt="Sholay">
+            </div>
+            <div class="desc drama">
+                <p><span class="movie_name movie_drama">K3G</span><br> A Marvel Comics superhero <br>team.</p>
+                <img src="resources/img/nano12.jpg" alt="K3G">
+            </div>
+            <div class="desc drama">
+                <p><span class="movie_name movie_drama">Shaurya</span><br> A Marvel Comics superhero <br>team.</p>
+                <img src="resources/img/nano13.jpg" alt="Shaurya">
+            </div>
+            <div class="desc drama">
+                <p><span class="movie_name movie_drama">Cheeni Kam</span><br> A Marvel Comics superhero <br>team.</p>
+                <img src="resources/img/nano14.jpg" alt="Cheeni Kam">
+            </div>
+            <div class="desc drama">
+                <p><span class="movie_name movie_drama">Ishq Vishq</span><br> A Marvel Comics superhero <br>team.</p>
+                <img src="resources/img/nano15.jpg" alt="Ishq Vishq">
+            </div>
+            <div class="desc drama">
+                <p><span class="movie_name movie_drama">Padmaavat</span><br> A Marvel Comics superhero <br>team.</p>
+                <img src="resources/img/nano16.jpg" alt="Padmaavat">
+            </div>
+            <div class="desc drama">
+                <p><span class="movie_name movie_drama">Kai Po Che</span><br> A Marvel Comics superhero <br>team.</p>
+                <img src="resources/img/nano17.jpg" alt="Kai Po Che">
+            </div>
+            <div class="desc drama">
+                <p><span class="movie_name movie_drama">Raabta</span><br> A Marvel Comics superhero <br>team.</p>
+                <img src="resources/img/nano18.jpg" alt="Raabta">
+            </div>
+            <div class="desc sci-fi">
+                <p><span class="movie_name movie_sci_fi">Interstellar</span><br> A Marvel Comics superhero <br>team.</p>
+                <img src="resources/img/nano19.jpg" alt="Interstellar">
+            </div>
+            <div class="desc sci-fi">
+                <p><span class="movie_name movie_sci_fi">Star Wars</span><br> A Marvel Comics superhero <br>team.</p>
+                <img src="resources/img/nano20.jpg" alt="Star Wars">
+            </div>
+            <div class="desc sci-fi">
+                <p><span class="movie_name movie_sci_fi">Thor</span><br> A Marvel Comics superhero <br>team.</p>
+                <img src="resources/img/nano21.jpg" alt="Thor">
+            </div>
+            <div class="desc sci-fi">
+                <p><span class="movie_name movie_sci_fi">Captain America</span><br> A Marvel Comics superhero <br>team.</p>
+                <img src="resources/img/nano22.jpg" alt="Captain America">
+            </div>
+            <div class="desc sci-fi">
+                <p><span class="movie_name movie_sci_fi">X-Men</span><br> A Marvel Comics superhero <br>team.</p>
+                <img src="resources/img/nano23.jpg" alt="X-Men">
+            </div>
+            <div class="desc sci-fi">
+                <p><span class="movie_name movie_sci_fi">Black Widow</span><br> A Marvel Comics superhero <br>team.</p>
+                <img src="resources/img/nano24.jpg" alt="Black Widow">
+            </div>
+            <div class="desc sci-fi">
+                <p><span class="movie_name movie_sci_fi">Iron-Man</span><br> A Marvel Comics superhero <br>team.</p>
+                <img src="resources/img/nano25.jpg" alt="Iron-Man">
+            </div>
+            <div class="desc sci-fi">
+                <p><span class="movie_name movie_sci_fi">Hulk</span><br> A Marvel Comics superhero <br>team.</p>
+                <img src="resources/img/nano26.jpg" alt="Hulk">
+            </div>
+            <div class="desc sci-fi">
+                <p><span class="movie_name movie_sci_fi">Captain Marvel</span><br> A Marvel Comics superhero <br>team.</p>
+                <img src="resources/img/nano27.jpg" alt="Captain Marvel">
+            </div>
+            <div class="desc sci-fi">
+                <p><span class="movie_name movie_sci_fi">Wonder Woman</span><br> A Marvel Comics superhero <br>team.</p>
+                <img src="resources/img/nano28.jpg" alt="Wonder Woman">
+            </div>
+            <div class="desc sci-fi">
+                <p><span class="movie_name movie_sci_fi">Batwoman</span><br> A Marvel Comics superhero <br>team.</p>
+                <img src="resources/img/nano29.jpg" alt="Batwoman">
+            </div>
+            <div class="desc sci-fi">
+                <p><span class="movie_name movie_sci_fi">Batman</span><br> A Marvel Comics superhero <br>team.</p>
+                <img src="resources/img/nano30.jpg" alt="Batman">
+            </div>
+            <div class="desc sci-fi">
+                <p><span class="movie_name movie_sci_fi">Superman</span><br> A Marvel Comics superhero <br>team.</p>
+                <img src="resources/img/nano31.jpg" alt="Superman">
+            </div>
+            <div class="desc sci-fi">
+                <p><span class="movie_name movie_sci_fi">Superwoman</span><br> A Marvel Comics superhero <br>team.</p>
+                <img src="resources/img/nano32.jpg" alt="Superwoman">
+            </div>
+            <div class="desc sci-fi">
+                <p><span class="movie_name movie_sci_fi">Doctor Strange</span><br> A Marvel Comics superhero <br>team.</p>
+                <img src="resources/img/nano33.jpg" alt="Doctor Strange">
+            </div>
+            <div class="desc sci-fi">
+                <p><span class="movie_name movie_sci_fi">Mars</span><br> A Marvel Comics superhero <br>team.</p>
+                <img src="resources/img/nano34.jpg" alt="Mars">
+            </div>
+            <div class="desc sci-fi">
+                <p><span class="movie_name movie_sci_fi">Gravity</span><br> A Marvel Comics superhero <br>team.</p>
+                <img src="resources/img/nano35.jpg" alt="Gravity">
+            </div>
+            <div class="desc sci-fi">
+                <p><span class="movie_name movie_sci_fi">Martian</span><br> A Marvel Comics superhero <br>team.</p>
+                <img src="resources/img/nano36.jpg" alt="Martian">
+            </div>
+        </div>
+    </section>
+
+    <footer class="cgradient">
+        <div>
+            <img src="resources/img/365ep.jpg" alt="logo">
+            <p>Powered by 365 Entertainment Portal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="resources/js/script.js"></script> 
+</body>
+</html>
